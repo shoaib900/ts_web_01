@@ -37,23 +37,25 @@ nav{
 }
 
 .nav{
-    height: 80px;
+    /* height: 80px; */
+    height: 10vh;
     background-color:rgb(220, 220, 220);
+    box-shadow: 1px 3px 5px black;
 }
 
 .nav h1{
     float: left;
-    line-height: 80px;
+    line-height: 10vh;
     margin-left: 170px;
 }
 .nav ul{
     float: right;
     list-style-type: none;
     margin-right: 160px;
+    line-height: 10vh;
 }
 .nav ul li{
     float: left;
-    line-height: 80px;
     margin-right:10px;
     text-transform: uppercase;
 }
@@ -65,5 +67,40 @@ nav{
 
 .nav ul li a:hover{
     color: tomato;
+}
+.nav ul li a:active{
+    color: purple;
+}
+.nav ul li a:visited{
+    color: white;
+}
+
+.content{
+    clear: both;
+    /* background-color: grey; */
+    /* height: 515px; */
+    height: 70vh;
+}
+.card1 , .card2{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin-top: 18vh;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card1{
+    float: left;
+    margin-left: 176px;
+}
+.card2{
+    float: right;
+    margin-right: 176px;
+}
+
+.footer{
+    background-color: black;
+    /* height: 100px; */
+    height: 20vh;
 }
 
