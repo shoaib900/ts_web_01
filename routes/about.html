@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .card{
+            height: 200px;
+            width: 300px;
+            box-shadow: 1px 1px 4px black;
+            position: relative;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            z-index: -1;
+        }
+          .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(21, 0, 255);
+            z-index: 100;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        .img{
+            min-width: 400px;
+            min-height: 200px;
+            border: 1px solid red;
+            background: url(../assets/123.png), rgba(9, 9, 9, 0.8) ;
+            line-height: 200px;
+            /* background-image: url(../assets/123.png); */
+            /* opacity: 0.5; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- <div class="card">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div> -->
+
+    <div class="img">
+        <h1 style="color: white;text-align: center;">hello world</h1>
+    </div>
+
+
+    
+</body>
+</html>
