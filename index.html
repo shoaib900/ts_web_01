@@ -10,6 +10,8 @@
 <body>
     <h1>25 + 25</h1>
 
+    <button onclick="sm() ">click me!</button>
+
     <script>
         // 01 display output 
 
@@ -22,11 +24,11 @@
 
         // 02 variable legal and illegal names 
 
-        var firstName; // camel case writing
-        var FirstName; // Pascal case writing
-        var first_name; // snake case writing
-        var first1name; // number case writing
-        var $first$name; // symbol case writing
+        // var firstName; // camel case writing
+        // var FirstName; // Pascal case writing
+        // var first_name; // snake case writing
+        // var first1name; // number case writing
+        // var $first$name; // symbol case writing
 
         // var 1stpm ;
         // var first-name ;
@@ -50,12 +52,12 @@
         // var total = 3 ^ 2
         //  console.log(total)
 
-        var a = 5;
-        var b = 10;
+        // var a = 5;
+        // var b = 10;
 
-        a = a ^ b; // 5 + 10 = 15
-        b = a ^ b; // 15 - 10 = 5
-        a = a ^ b; // 15 - 5 = 10
+        // a = a ^ b; // 5 + 10 = 15
+        // b = a ^ b; // 15 - 10 = 5
+        // a = a ^ b; // 15 - 5 = 10
         // console.log(a,b)
 
 
@@ -190,10 +192,123 @@
 
         // console.log(arr2)
 
-        var arr = ["asan","muqeet","zulqurnain","ashutosh"];
+        //  var arr = ["asan","muqeet","zulqurnain","ashutosh"];
 
-        arr.push(arr.pop())
-        arr.pop(arr.push("aslan"))
+        // arr.push(arr.pop())
+        // arr.pop(arr.push("aslan"))
+
+        // a = 10;
+        // b = a;
+        // console.log(a,b)
+        // a = 12;
+        // console.log(a,b)
+
+        // var x = ["ayesha","emran"]
+        // var y = x;
+        // console.log(x,y)
+        // x[1] = "sofia" 
+        // console.log(x,y)
+
+        // var arr = ["data 1"]
+
+        // var arr2 = arr.concat("data 2")
+
+        // console.log(arr2)
+
+        // var arr1 = ["asad","ameer"]
+        // var arr2 = ["amir","akmal"]
+
+        // var arr3 = arr1.concat(arr2)
+
+        // console.log(arr3)
+
+
+        // 9 loops :
+
+        // for(var i=0;i<10;i++){
+        //     console.log(i)
+        // }
+
+        // for(var i = 1; i < 1000; i++){
+        //     console.log(i , "Pakistan")
+        // }
+
+        // var i = 1;
+        // while(i < 10){
+        //     console.log(i , "I love Pakistan")
+        //     i++
+        // }
+
+        // var i = 5;
+        // do{
+        //     console.log(i , "hello world")
+        //     i++
+        // }while(i < 4)
+
+        // var arr = ["akash", "atif", "ashutosh", "eman"]
+
+        // for (i in arr) {
+        //     console.log(i)
+        // }
+
+        // for (i of arr) {
+        //     console.log(i)
+        // }
+
+        // 10 javascript hoisting interview question
+
+        // a = 10; // declare
+        // console.log(a) // call
+        // var a; // initialize
+
+        // ba = 20;
+        // console.log(b)
+        // let ba;
+
+        // const bab = 10 ;
+
+
+        // 11 Math operation 
+
+        // var a = Math.random() * 10
+        // console.log(a)
+
+        // var b = Math.round(4.4454)
+        // console.log(b)
+
+        // var c = Math.floor(5.999999)
+        // console.log(c)
+
+        // var d = Math.ceil(5.1111)
+        // console.log(d)
+
+        // var guesNumber = Math.round( Math.random() * 10 )
+
+        // console.log(guesNumber)
+
+        // var num1 = Number(prompt("Enter the number : "))
+
+        // if ( guesNumber === num1){
+        //     console.log("you got that number...🥳🥳🥳")
+        // }else{
+        //     console.log("you failed it ... 🥹😭🥹😭")
+        // }
+
+        // 12 functions 
+
+        // function declaration: regular function 
+
+        // function sm(a,b){
+        //     console.log("hello world", a + b  )
+        // }
+
+        // sm()
+
+        function sm(){
+            var num1 = prompt("Enter the number: ")
+            var num2 = prompt("Enter the number: ")
+            console.log( parseInt(num1) +parseInt(num2) )
+        }
 
 
 
