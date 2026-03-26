@@ -15,7 +15,11 @@
 <body>
     <!-- <h1>25 + 25</h1> -->
 
-    <div id="demo" style="height: 100vh;width: 100%;"></div>
+    <!-- <div id="demo" style="height: 100vh;width: 100%;"></div> -->
+
+    <input type="text" placeholder="Enter your name" id="input">
+    <button onclick="ab()">Add on page</button>
+    <div id="memo"></div>
 
     <!-- <button onclick="sm() ">click me!</button>
     <button onclick="sp() ">reset colors</button>
@@ -364,22 +368,54 @@
         //    demo.style.backgroundColor = "white"
         // }
 
-        var num1 = Math.round(Math.random() * 10 )
-        console.log(num1)
+        // var num1 = Math.round(Math.random() * 10 )
+        // console.log(num1)
 
-        var guesNum = parseInt(prompt("enter the number"))
+        // var guesNum = parseInt(prompt("enter the number"))
 
-        var demo = document.getElementById("demo")
+        // var demo = document.getElementById("demo")
         
-        if( num1 === guesNum){
-            demo.style.backgroundColor = "green"
-        }else{
-            demo.style.backgroundColor = "red"
+        // if( num1 === guesNum){
+        //     demo.style.backgroundColor = "green"
+        // }else{
+        //     demo.style.backgroundColor = "red"
 
+        // }
+
+        // function ab(){
+        //     var input = document.getElementById("input")
+        //     var data = document.getElementById("memo")
+
+        //     console.log(input.value)
+        //     // document.write(input.value)
+        //     // data.innerHTML = "<h1>" +  input.value + "</h1>"; // concatenation
+
+        //     data.innerHTML =  ` <h1> ${input.value} </h1>` // concatenation
+        //     input.value = "";
+        // }
+
+        // 15 Objects 
+
+        var obj1 = {
+            "name":"adil",
+            "age": 26,
+            "education":"BSCS",
+            "full name":"adil ali"
         }
 
+        obj1.name = "adeela"
+        obj1["full name"] = "adeela bibi "
+        console.log(obj1)
+        console.log(obj1.name)
+        console.log(obj1["full name"])
 
+        obj1["gender"] = "female"
+        
+        delete obj1["education"]
+        console.log(obj1)
 
+        console.log(Object.keys(obj1))
+        console.log(Object.values(obj1))
 
 
     </script>
