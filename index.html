@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
         }
     </style>
@@ -15,18 +15,69 @@
 <body>
     <!-- <h1>25 + 25</h1> -->
 
+    <!-- <form>
+        <input type="text" placeholder="Enter your username" id="username">
+        <input type="text" placeholder="enter your age" id="age">
+        <input type="text" placeholder="Enter your gender" id="gender">
+        <input type="text" placeholder="Education" id="education">
+        <button class="mybtn">Add</button>
+    </form> -->
+
+    <br><br>
+    <!-- <table border="2" id="table">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>gender</th>
+            <th>education</th>
+        </tr>
+        <tr>
+            <td id="name1"></td>
+            <td id="age1"></td>
+            <td id="gender1"></td>
+            <td id="education1"></td>
+        </tr>
+    </table> -->
+
     <!-- <div id="demo" style="height: 100vh;width: 100%;"></div> -->
 
-    <input type="text" placeholder="Enter your name" id="input">
+    <!-- <input type="text" placeholder="Enter your name" id="input">
     <button onclick="ab()">Add on page</button>
-    <div id="memo"></div>
+    <div id="memo"></div> -->
 
     <!-- <button onclick="sm() ">click me!</button>
     <button onclick="sp() ">reset colors</button>
 
     <div id="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, deleniti fuga. Repudiandae saepe aliquid pariatur accusantium in corporis doloribus voluptatum! Iusto error provident vero quaerat at, saepe non doloremque cumque.</div> -->
 
+    <input type="number" id="num">
+    <button onclick="oncube() ">cube</button>
+    <p id="demo"></p>
     <script>
+
+        function oncube(){
+            var num = document.querySelector("#num").value;
+            if(num === null || num === ""){
+                document.querySelector("#demo").innerHTML = "The field is empty" 
+                document.querySelector("#demo").style.color = "red";
+            }else{
+                num = num*num*num;
+                document.querySelector("#demo").innerHTML = num;
+                document.querySelector("#demo").style.color = "green";
+            }
+        }
+
+        // function sub(){
+        //     var username = document.getElementById("username").value
+        //     var age = document.getElementById("age").value
+        //     var gender = document.getElementById("gender").value
+        //     var education = document.getElementById("education").value
+        //     console.log(username,age, gender,education)
+        // }
+
+
+
+
         // 01 display output 
 
         // console.log("hello world")
@@ -345,7 +396,7 @@
         //     return a;
         // }
 
-            //  function sm(a) a
+        //  function sm(a) a
 
         //     var sm = (a) => a;
 
@@ -374,7 +425,7 @@
         // var guesNum = parseInt(prompt("enter the number"))
 
         // var demo = document.getElementById("demo")
-        
+
         // if( num1 === guesNum){
         //     demo.style.backgroundColor = "green"
         // }else{
@@ -394,28 +445,117 @@
         //     input.value = "";
         // }
 
+
+
         // 15 Objects 
 
-        var obj1 = {
-            "name":"adil",
-            "age": 26,
-            "education":"BSCS",
-            "full name":"adil ali"
-        }
+        // var obj1 = {
+        //     "name":"adil",
+        //     "age": 26,
+        //     "education":"BSCS",
+        //     "full name":"adil ali"
+        // }
 
-        obj1.name = "adeela"
-        obj1["full name"] = "adeela bibi "
-        console.log(obj1)
-        console.log(obj1.name)
-        console.log(obj1["full name"])
+        // obj1.name = "adeela"
+        // obj1["full name"] = "adeela bibi "
+        // console.log(obj1)
+        // console.log(obj1.name)
+        // console.log(obj1["full name"])
 
-        obj1["gender"] = "female"
-        
-        delete obj1["education"]
-        console.log(obj1)
+        // obj1["gender"] = "female"
 
-        console.log(Object.keys(obj1))
-        console.log(Object.values(obj1))
+        // delete obj1["education"]
+        // console.log(obj1)
+
+        // console.log(Object.keys(obj1))
+        // console.log(Object.values(obj1))
+
+        //        document.getElementById("table").style.display = "none"
+
+        // document.querySelector(".mybtn").addEventListener("click", (e)=>{
+        //     e.preventDefault() // synthatic event;
+
+        //     var username = document.getElementById("username").value
+        //     var age = document.getElementById("age").value
+        //     var gender = document.getElementById("gender").value
+        //     var education = document.getElementById("education").value
+
+
+
+        //     console.log(username,age, gender,education)
+
+        //     var name1 = document.querySelector("#name1")
+        //     var age1 = document.querySelector("#age1")
+        //     var gender1 = document.querySelector("#gender1")
+        //     var education1 = document.querySelector("#education1")
+
+        //     name1.innerHTML = username;
+        //     age1.innerHTML = age;
+        //     gender1.innerHTML = gender;
+        //     education1.innerHTML = education;
+
+        //     username =""
+        //      age = ""
+        //      gender = ""
+        //      education = ""
+        //       document.getElementById("table").style.display = "inline-block"
+        // })
+
+
+        // 16 synchronous / asynchronous 
+
+        // console.log("A")
+        // console.log("B")
+        // console.log("C")
+
+
+        // setTimeout(() => { console.log("A") }, 10000)
+        // console.log("B")
+        // console.log("C")
+
+        //     fetch('https://jsonplaceholder.typicode.com/todos/1')
+        //   .then(response => response.json())
+        //   .then(json => console.log(json))
+
+        // setInterval( ()=>{
+        //     console.log("shahwaiz")
+        // }, 1000 )
+
+
+        // for (let i = 0; i <= 5; i++) {
+        //     setTimeout(() => {
+        //         console.log(i)
+
+        //     }, 0);
+        // }
+
+        // 17 filter / map methods 
+
+        // var list = [1,2,3,4,5,6,7,8,9,10]
+
+        // even = []
+        // for(var i = 0; i <= list.length; i++){
+        //     if (list[i] % 2 === 0){
+        //         even.push(list[i])
+        //     }
+        // }
+
+        // even = list.filter( i => i % 2 === 0 )
+        // odd = list.filter( i => i % 2 != 0 )
+
+        // console.log(even, odd)
+
+    //    var  squere =[]
+    //     for(var i = 0;i < list.length;i++){
+    //         var p = list[i]*list[i];
+    //         squere.push(p)
+    //     }
+    //     console.log(squere)
+
+
+        // var square = list.map(i => i/i)
+
+        // console.log(square)
 
 
     </script>
