@@ -61,8 +61,12 @@
             var username = document.querySelector("#username").value;
             var password = document.querySelector("#password").value;
 
-            if(username === "" && password === ""){
-                error.inner
+            // console.log(username,password)
+
+            if(username === ""|| password === ""){
+               console.error("error")
+               error.innerHTML = "Error 🤢🤢🤢"
+               error.style.color = "red"
             }
 
 
