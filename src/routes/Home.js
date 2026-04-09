@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import Button from '../components/Button'
 
 const Home = () => {
   const [count,setCount] = useState(0)
@@ -14,7 +15,10 @@ const Home = () => {
     }
   }
   return (
-    <div>
+    <div className='container-fluid'>
+
+      <Button> Submit</Button>
+
         <h1>Home page {count} </h1>
         <span style={{color:"red"}}>{errmsg} </span><br />
 

@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import Shahwaiz from '../components/Shahwaiz'
-
+import Button from '../components/Button'
 const Service = () => {
     const [count, setCount] = useState(0)
 
@@ -21,6 +21,9 @@ const Service = () => {
             <button onClick={inc}>add by 1</button>
 
             <Shahwaiz />
+            <hr />
+
+            <Button>console log</Button>
 
         </div>
     )
